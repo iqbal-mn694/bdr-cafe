@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body,
+html{
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background: #1F5F5B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* Gaya umum untuk form */
+.search {
+    position: fixed; /* Agar tetap di tempat saat di-scroll */
+    top: 27px; /* Jarak dari atas */
+    right: 160px; /* Jarak dari kanan */
+  }
+  
+  /* Gaya untuk input pencarian */
+  .search input[type="search"] {
+    width: 200px; /* Lebar input */
+    height: 30px;
+    padding: 10px; /* Padding dalam input */
+    border: 2px solid #ccc; /* Warna dan ketebalan border */
+    border-radius: 7px; /* Membuat sudut melengkung */
+    outline: none; /* Menghapus outline saat focus */
+    transition: all 0.3s ease; /* Animasi saat fokus */
+  }
+  
+  .search input[type="search"]:focus {
+    border-color: #78debf; /* Warna border saat fokus */
+    box-shadow: 0 0 8px rgba(46, 105, 110, 0.5); /* Efek bayangan saat fokus */
+  }
+
+/* Gaya untuk div login */
+.login {
+  position: fixed; /* Tetap di posisi yang ditentukan saat scroll */
+  top: 20px; /* Jarak dari atas */
+  right: 40px; /* Jarak dari kanan */
+}
+
+/* Gaya untuk tombol login */
+.login button {
+  background-color: #1F5F5B; /* Warna latar hijau */
+  color: white; /* Warna teks putih */
+  border: 2px solid rgb(248, 248, 248); /* Border hitam */
+  padding: 10px 20px; /* Padding dalam tombol */
+  border-radius: 15px; /* Membuat sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  transition: background-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Efek hover untuk tombol */
+.login button:hover {
+  background-color: darkgreen; /* Warna latar lebih gelap saat hover */
+}
+
+.navbar .logo {
+    position: relative;
+    top: 5px;
+    right: 20px;
+}
+
+.navbar .menu a {
+    position: relative;
+    right: 300px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    margin: 0 1rem;
+}
+
+.hero-banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.menu-item {
+    position: relative;
+    left: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-link {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px;
+}
+
+.menu-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-details {
+    padding: 10px;
+}
+
+.menu-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.menu-rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+.menu-price {
+    font-size: 14px;
+    color: #4caf50;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.menu-cart {
+    display: block;
+    text-align: center;
+    background-color: #1F5F5B;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    text-decoration: none;
+}
+
+.menu-cart:hover {
+    background-color: #388e3c;
+}

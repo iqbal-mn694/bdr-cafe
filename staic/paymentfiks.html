@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembayaran</title>
+    <link rel="stylesheet" href="css/paymentfiks.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-box">
+            <h1>HALAMAN PEMBAYARAN</h1>
+            <hr>
+            <p class="amount-label">TOTAL YANG HARUS DIBAYAR</p>
+            <p class="amount">Rp. 15.000</p>
+            <p class="order-number">No Pesanan Anda: 23823628</p>
+
+            <p class="payment-method-title">METODE PEMBAYARAN</p>
+            <div class="payment-methods">
+                <div class="method">
+                    <img src="img/bank bri.png" alt="Logo BRI">
+                    <p>BRI: 1234567</p>
+                </div>
+                <div class="method">
+                    <img src="img/OVO.png" alt="Logo OVO">
+                    <p>OVO: 0873232378</p>
+                </div>
+                <div class="method">
+                    <img src="img/DANA.jpg" alt="Logo DANA">
+                    <p>DANA: 0873232378</p>
+                </div>
+            </div>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="payment-proof">UPLOAD BUKTI PEMBAYARAN</label>
+                <input type="file" id="payment-proof" name="payment-proof" accept="image/*" required>
+
+                <button type="submit">KONFIRMASI PEMBAYARAN</button>
+            </form>
+        </div>
+        
+        <!-- Notifikasi setelah pembayaran -->
+        <div id="confirmation-box" class="hidden">
+            <h2>Pembayaran Sedang Diproses</h2>
+            <p>Terima kasih telah melakukan pembayaran. Mohon tunggu beberapa saat.</p>
+            <button id="home-btn">Kembali ke Home</button>
+        </div>
+    </div>
+</body>
+</html>

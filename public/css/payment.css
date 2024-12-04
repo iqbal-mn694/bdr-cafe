@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b5854;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.payment-box h1 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.payment-box hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.amount-label, .payment-method-title, .order-number {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.method img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #1b5854;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #14534e;
+}
+
+#confirmation-box {
+    display: display;
+}
+
+#confirmation-box h2 {
+    color: #1b5854;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#home-btn {
+    background-color: #1b5854;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home-btn:hover {
+    background-color: #14534e;
+}
